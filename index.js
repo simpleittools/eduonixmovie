@@ -7,6 +7,8 @@ const PORT = process.env.PORT || 3000
 
 const DATABASE_URL = process.env.DATABASE_URL || "mongodb://localhost/movies"
 
+app.use(express.static("public"))
+
 mongoose.set('useNewUrlParser', true)
 mongoose.set('useFindAndModify', false)
 mongoose.set('useCreateIndex', true)
