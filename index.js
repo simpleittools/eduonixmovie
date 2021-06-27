@@ -1,6 +1,5 @@
 const express = require("express")
 const app = express()
-const validate = require("./validate")
 const mongoose = require("mongoose")
 const moviesRouter = require("./routes/movies")
 
