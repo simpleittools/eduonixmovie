@@ -5,6 +5,35 @@
     <title></title>
 </head>
 <body>
-    <p>Hello World! I hope you are well.</p>
+<p>Hello World! I hope you are well.</p>
+<form action="" id="user_form">
+    <field>
+        <label>RESTful API</label><br>
+        <label>-GET-</label>
+        <input type="text" id="movieId" name="movieId" placeholder="movie id">
+        <button id="getButton" name="getButton" value="submit" type="submit">Get Movies</button>
+    </field>
+</form>
+
+<form id="movie_post">
+    <field>
+        <label>-POST-</label>
+        <br>
+        <label for="movieTitle">Movie Title</label>
+        <input type="text" id="movieTitle" name="movieTitle" placeholder="Post Movie Title"><br>
+        <label for="movieDirector">Movie Director</label>
+        <input type="text" id="movieDirector" name="movieDirector" placeholder="Post Director"><br>
+        <label for="movieDate">Release Date</label>
+        <input type="date" id="movieDate" name="movieDate">
+        <button id="postButton" name="postButton" method="POST">POST</button>
+    </field>
+</form>
+
+<p>Movies in the database:</p>
+<div id="results">
+
+</div>
+
+<script src="api.js"></script>
 </body>
 </html>
